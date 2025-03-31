@@ -2,9 +2,14 @@ package desafio.itau.springboot.dto;
 
 import java.util.DoubleSummaryStatistics;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class StatisticsResponse {
 
-	private Long count;
+	private long count;
 	private double sum;
 	private double avg;
 	private double min;
@@ -17,8 +22,5 @@ public class StatisticsResponse {
 		this.min = stats.getMin();
 		this.max = stats.getMax();
 	}
-
-
-	
 	
 }
